@@ -1,4 +1,7 @@
+import { DatePipe, getLocaleDateTimeFormat } from '@angular/common';
 import { Component } from '@angular/core';
+import pesquisa from '../../assets/mockdata/novidades.json';
+
 
 @Component({
   selector: 'app-tab2',
@@ -7,6 +10,10 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  sections = pesquisa.sections;
+  dateAtual = new Date;
+
+  constructor() {
+  }
 
 }

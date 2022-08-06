@@ -1,17 +1,35 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Novidades
+      <ion-icon name="megaphone-outline"></ion-icon>
     </ion-title>
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+
+  <ion-card *ngFor="let section of sections">
+    <div *ngIf="section.date  !== 'continue'">
+      <ion-card-header>
+        <ion-card-title color="light">{{section.date}}</ion-card-title>
+        <img [src]="'/assets/mockdata/continue-'+section.id+'.jpg'">
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-text class="title" color="light">
+          {{section.title}}
+        </ion-text>
+        <ion-text class="descrition" color="medium">
+          {{section.descrition}}
+        </ion-text>
+        <ion-text *ngFor="let categoria of section.categorias" class="categorias" color="light">
+          {{categoria.name}}
+        </ion-text>
+      </ion-card-content>
+    </div>
+  </ion-card>
+
 </ion-content>

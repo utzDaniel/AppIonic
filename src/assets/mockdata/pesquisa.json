@@ -1,0 +1,23 @@
+{
+  "sections": [
+    {
+      "series": [
+        {
+          "id": 1,
+          "title": "Bridergton",
+          "season": "S1:E3"
+        },
+        {
+          "id": 2,
+          "title": "Lupin",
+          "season": "S1:E5"
+        },
+        {
+          "id": 3,
+          "title": "Money Heist",
+          "season": "S3:E4"
+        }
+      ]
+    }
+  ]
+}

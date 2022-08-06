@@ -14,9 +14,9 @@
     </ion-row>
   </ion-toolbar>
 </ion-header>
- 
+
 <ion-content [fullscreen]="true" scrollEvents="true" [appHideHeader]="header">
- 
+
   <div class="spotlight" [style.background-image]="'url(/assets/mockdata/'+spotlight.id+'-cover.jpg)'">
     <div class="gradient"></div>
     <div class="info">
@@ -44,15 +44,15 @@
       </ion-row>
     </div>
   </div>
- 
+
   <div *ngFor="let section of sections" class="ion-padding">
     <span class="section-title">{{ section.title }}</span>
     <ion-slides [options]="opts">
- 
+
       <ion-slide *ngFor="let series of section.series">
         <img *ngIf="section.type !== 'continue'" [src]="'/assets/mockdata/'+section.type+'-'+series.id+'.jpg'">
         <div class="continue" *ngIf="section.type === 'continue'">
- 
+
           <img [src]="'/assets/mockdata/'+section.type+'-'+series.id+'.jpg'">
           <div class="progress-bar">
             <div class="progress" [style.width]="series.progress + '%'"></div>
@@ -71,9 +71,9 @@
           </ion-row>
         </div>
       </ion-slide>
- 
+
     </ion-slides>
   </div>
- 
- 
+
+
 </ion-content>

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import pesquisa from '../../assets/mockdata/pesquisa.json';
+import { DrawerService } from '../services/drawer.service';
 
 @Component({
   selector: 'app-tab3',
@@ -7,6 +9,13 @@ import { Component } from '@angular/core';
 })
 export class Tab3Page {
 
-  constructor() {}
+  sections = pesquisa.sections;
+
+  constructor(private drawerService: DrawerService) {
+  }
+
+  openInfo(series) {
+    this.drawerService.openDrawer(series.title);
+  }
 
 }

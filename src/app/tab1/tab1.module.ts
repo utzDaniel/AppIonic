@@ -19,4 +19,4 @@ import { ModalPageModule } from '../modal/modal.module';
   ],
   declarations: [Tab1Page]
 })
-export class Tab1PageModule {}
+export class Tab1PageModule { }

@@ -1,0 +1,43 @@
+{
+  "sections": [
+    {
+      "id": 1,
+      "tipo": "series",
+      "title": "Bridergton",
+      "date": "10/08/2022",
+      "descrition": "Bridergton qweqw841",
+      "categorias": [
+        {
+          "name": "drama"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "tipo": "series",
+      "title": "Lupin",
+      "date": "12/09/2022",
+      "descrition": "Lupin a18wd qqw",
+      "categorias": [
+        {
+          "name": "suspense"
+        },
+        {
+          "name": "terror"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "tipo": "series",
+      "title": "Money Heist",
+      "date": "25/08/2022",
+      "descrition": "Money Heist qweq547",
+      "categorias": [
+        {
+          "name": "terror"
+        }
+      ]
+    }
+  ]
+}

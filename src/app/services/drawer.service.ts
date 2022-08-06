@@ -11,6 +11,6 @@ export class DrawerService {
   constructor() { }
 
   openDrawer(title) {
-    this.drawerOpen.next({open: true, title});
+    this.drawerOpen.next({ open: true, title });
   }
 }
