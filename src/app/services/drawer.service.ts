@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
+import { IFilme } from '../model/IFilme.model';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +11,7 @@ export class DrawerService {
 
   constructor() { }
 
-  openDrawer(title) {
-    this.drawerOpen.next({ open: true, title });
+  openDrawer(filme: IFilme) {
+    this.drawerOpen.next({ open: true, filme });
   }
 }

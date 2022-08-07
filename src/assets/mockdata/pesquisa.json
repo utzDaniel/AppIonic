@@ -1,23 +1,33 @@
-{
-  "sections": [
-    {
-      "series": [
-        {
-          "id": 1,
-          "title": "Bridergton",
-          "season": "S1:E3"
-        },
-        {
-          "id": 2,
-          "title": "Lupin",
-          "season": "S1:E5"
-        },
-        {
-          "id": 3,
-          "title": "Money Heist",
-          "season": "S3:E4"
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "id": "1",
+    "tipo": "series",
+    "title": "Bridergton",
+    "date": "05/08/2022",
+    "descrition": "Bridergton qweqw841",
+    "categorias": [
+      "drama"
+    ]
+  },
+  {
+    "id": "2",
+    "tipo": "series",
+    "title": "Lupin",
+    "date": "12/09/2022",
+    "descrition": "Lupin a18wd qqw",
+    "categorias": [
+      "suspense",
+      "terror"
+    ]
+  },
+  {
+    "id": "3",
+    "tipo": "series",
+    "title": "Money Heist",
+    "date": "25/08/2022",
+    "descrition": "Money Heist qweq547",
+    "categorias": [
+      "terror"
+    ]
+  }
+]

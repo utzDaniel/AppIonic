@@ -1,11 +1,68 @@
-.drawer {
-    position: absolute;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 16px;
-    width: 100%;
-    border-radius: 4px;
-    bottom: -300px;
-    height: 300px;
-    z-index: 11;
-    background: #2B2B2C;
-    color: #fff;
+ion-list {
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 16px;
+  width: 100%;
+  border-radius: 4px;
+  bottom: -300px;
+  height: 300px;
+  z-index: 11;
+  background: #2B2B2C;
+}
+
+
+ion-list-header {
+  padding: initial;
+  align-items: center;
+}
+
+ion-list-header ion-item:last-child {
+  --background: #2B2B2C !important;
+  --border-color: #2B2B2C;
+}
+
+ion-list-header ion-item:last-child:hover {
+  --background: #2B2B2C !important;
+  cursor: pointer;
+  --border-color: #2B2B2C;
+
+}
+
+ion-item {
+  --background: #2B2B2C !important;
+  --border-color: #fff;
+}
+
+ion-item:hover {
+  --background: #1a1a1a !important;
+  cursor: pointer;
+  --border-color: #1a1a1a;
+
+}
+
+ion-list-header ion-icon {
+  padding: 0px;
+  color: #fff;
+}
+
+ion-icon {
+  padding-right: 5px;
+  color: #fff;
+}
+
+ion-list-header ion-label {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #fff;
+  margin: auto;
+}
+
+ion-label {
+  color: #fff;
+}
+
+.t {
+  --height: 5px;
+  height: 5px;
+  --background: #fff;
+  background: #fff;
 }

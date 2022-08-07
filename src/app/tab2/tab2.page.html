@@ -9,24 +9,24 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  {{ dateAtual | date:"dd/MM/yyyy" }}
 
-
-  <ion-card *ngFor="let section of sections">
-    <div *ngIf="section.date  !== 'continue'">
+  <ion-card *ngFor="let filme of filmes">
+    <div>
       <ion-card-header>
-        <ion-card-title color="light">{{section.date}}</ion-card-title>
-        <img [src]="'/assets/mockdata/continue-'+section.id+'.jpg'">
+        <ion-card-title color="light">{{filme.date}}</ion-card-title>
+        <img [src]="'/assets/mockdata/continue-'+filme.id+'.jpg'">
       </ion-card-header>
 
       <ion-card-content>
         <ion-text class="title" color="light">
-          {{section.title}}
+          {{filme.title}}
         </ion-text>
         <ion-text class="descrition" color="medium">
-          {{section.descrition}}
+          {{filme.descrition}}
         </ion-text>
-        <ion-text *ngFor="let categoria of section.categorias" class="categorias" color="light">
-          {{categoria.name}}
+        <ion-text *ngFor="let categoria of filme.categorias" class="categorias" color="light">
+          {{categoria}}
         </ion-text>
       </ion-card-content>
     </div>

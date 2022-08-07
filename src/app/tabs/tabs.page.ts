@@ -19,7 +19,7 @@ export class TabsPage {
   constructor(private drawerService: DrawerService, private changeDetectorRef: ChangeDetectorRef) {
     this.drawerService.drawerOpen.subscribe(drawerData => {
       if (drawerData && drawerData.open) {
-        this.drawer.openDrawer(drawerData.title);
+        this.drawer.openDrawer(drawerData.filme);
       }
     });
   }

@@ -1,6 +1,6 @@
-import { DatePipe, getLocaleDateTimeFormat } from '@angular/common';
 import { Component } from '@angular/core';
-import pesquisa from '../../assets/mockdata/novidades.json';
+import novidades from '../../assets/mockdata/novidades.json';
+import { IFilme } from '../model/IFilme.model';
 
 
 @Component({
@@ -10,7 +10,7 @@ import pesquisa from '../../assets/mockdata/novidades.json';
 })
 export class Tab2Page {
 
-  sections = pesquisa.sections;
+  filmes: IFilme[] = novidades;
   dateAtual = new Date;
 
   constructor() {

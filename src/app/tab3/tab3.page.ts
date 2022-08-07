@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import pesquisa from '../../assets/mockdata/pesquisa.json';
+import { IFilme } from '../model/IFilme.model';
 import { DrawerService } from '../services/drawer.service';
 
 @Component({
@@ -9,13 +10,14 @@ import { DrawerService } from '../services/drawer.service';
 })
 export class Tab3Page {
 
-  sections = pesquisa.sections;
+  filmes: IFilme[] = pesquisa;
+
 
   constructor(private drawerService: DrawerService) {
   }
 
-  openInfo(series) {
-    this.drawerService.openDrawer(series.title);
+  openInfo(filme: IFilme) {
+    this.drawerService.openDrawer(filme);
   }
 
 }

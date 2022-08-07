@@ -3,7 +3,7 @@ import { ModalController } from '@ionic/angular';
 import homeData from '../../assets/mockdata/home.json';
 import { ModalPage } from '../modal/modal.page';
 import { modalEnterAnimation, modalLeaveAnimation } from '../modal-animation';
-import { DrawerService } from '../services/drawer.service';
+/*import { DrawerService } from '../services/drawer.service';*/
 
 @Component({
   selector: 'app-tab1',
@@ -21,7 +21,7 @@ export class Tab1Page {
     freeMode: true
   };
 
-  constructor(private modalCtrl: ModalController, private drawerService: DrawerService) {
+  constructor(private modalCtrl: ModalController, /*private drawerService: DrawerService*/) {
   }
 
   async openCategories() {
@@ -35,8 +35,8 @@ export class Tab1Page {
     await modal.present();
   }
 
-  openInfo(series) {
+  /*openInfo(series) {
     this.drawerService.openDrawer(series.title);
-  }
+  }*/
 
 }
