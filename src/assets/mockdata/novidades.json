@@ -4,6 +4,7 @@
     "tipo": "series",
     "title": "Bridergton",
     "date": "05/08/2022",
+    "src": "/assets/mockdata/continue-1.jpg",
     "descrition": "Bridergton qweqw841",
     "categorias": [
       "drama"
@@ -14,6 +15,7 @@
     "tipo": "series",
     "title": "Lupin",
     "date": "12/09/2022",
+    "src": "/assets/mockdata/continue-2.jpg",
     "descrition": "Lupin a18wd qqw",
     "categorias": [
       "suspense",
@@ -25,6 +27,7 @@
     "tipo": "series",
     "title": "Money Heist",
     "date": "25/08/2022",
+    "src": "/assets/mockdata/continue-3.jpg",
     "descrition": "Money Heist qweq547",
     "categorias": [
       "terror"

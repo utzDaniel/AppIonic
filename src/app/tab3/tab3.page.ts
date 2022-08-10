@@ -16,6 +16,17 @@ export class Tab3Page {
   constructor(private drawerService: DrawerService) {
   }
 
+  buscar(evento: any) {
+    const busca = evento.target.value;
+    if (busca && busca.trim() !== '') {
+      this.filmes = this.filmes.filter(filme =>
+        filme.title.toLowerCase().includes(busca.toLowerCase()));
+    } else {
+      this.filmes = pesquisa;
+    }
+
+  }
+
   openInfo(filme: IFilme) {
     this.drawerService.openDrawer(filme);
   }

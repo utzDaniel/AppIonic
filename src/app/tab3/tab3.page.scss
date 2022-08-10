@@ -1,19 +1,30 @@
-.section-title {
-  font-weight: 600;
-  font-size: large;
+ion-title {
+  font-weight: 700;
+}
+
+ion-searchbar {
+  padding: 0px;
+  margin-bottom: 10px;
 }
 
 ion-list {
-  margin-top: 10px;
+  padding: 4px 0px;
   --background: rgb(206, 200, 200);
 }
 
 ion-item {
-  margin-top: 10px;
-  --background: rgb(67, 44, 159);
+  padding: 0px;
+  margin: 0px;
+  --background: #333533;
+  --border-color: #fff;
 }
 
+ion-item:hover {
+  --background: #1a1b1a;
+  cursor: pointer;
 
-ion-toolbar {
-  --background: rgba(246, 250, 2, 0.43);
+}
+
+ion-thumbnail {
+  margin: 0px 10px 0px 0px;
 }

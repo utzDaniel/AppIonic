@@ -1,9 +1,31 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>dados</ion-title>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Dados do Filme</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="light" [fullscreen]="true">
+  <ion-card>
+    <div>
+      <ion-card-header>
+        <ion-card-title>{{filme.date}}</ion-card-title>
+        <img [src]="filme.src" />
+      </ion-card-header>
 
+      <ion-card-content>
+        <ion-text class="title" color="light">
+          {{filme.title}}
+        </ion-text>
+        <ion-text class="descrition" color="medium">
+          {{filme.descrition}}
+        </ion-text>
+        <ion-text *ngFor="let categoria of filme.categorias" class="categorias" color="light">
+          {{categoria}}
+        </ion-text>
+      </ion-card-content>
+    </div>
+  </ion-card>
 </ion-content>

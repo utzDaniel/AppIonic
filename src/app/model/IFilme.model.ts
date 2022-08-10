@@ -3,6 +3,7 @@ export interface IFilme {
   tipo: string,
   title: string,
   date: string,
+  src: string,
   descrition: string,
   categorias: string[]
 }
