@@ -1,19 +1,27 @@
+ion-toolbar {
+  --opacity: .95;
+  --padding: 0px;
+}
+
 ion-title {
+  height: 80px;
+  padding: 0px 20px;
+  font-size: 20px;
+  text-align: center;
+  color: rgba(7, 167, 114, 0.867);
   font-weight: 700;
 }
 
 ion-searchbar {
   padding: 0px;
-  margin-bottom: 10px;
 }
 
 ion-list {
-  padding: 4px 0px;
-  --background: rgb(206, 200, 200);
+  margin: 7px 0px;
 }
 
 ion-item {
-  padding: 0px;
+  padding: 4px 0px;
   margin: 0px;
   --background: #333533;
   --border-color: #fff;
@@ -26,5 +34,13 @@ ion-item:hover {
 }
 
 ion-thumbnail {
-  margin: 0px 10px 0px 0px;
+  margin: 0px;
+}
+
+ion-label {
+  margin: 0px 10px 0px 10px;
+}
+
+#shadow-root div .item-native {
+  display: contents;
 }

@@ -7,9 +7,10 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-searchbar (ionChange)="buscar($event)" placeholder="Buscar" color="light"></ion-searchbar>
-  <ion-list *ngFor="let filme of filmes">
-    <ion-item (click)="openInfo(filme)" lines="full" slot="start">
+  <ion-searchbar (ionChange)="buscar($event)" placeholder="Buscar" color="light">
+  </ion-searchbar>
+  <ion-list>
+    <ion-item *ngFor="let filme of filmes" (click)="openInfo(filme)" lines="none">
       <ion-thumbnail>
         <img [src]="filme.src" />
       </ion-thumbnail>

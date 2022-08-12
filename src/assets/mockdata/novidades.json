@@ -3,7 +3,7 @@
     "id": "1",
     "tipo": "series",
     "title": "Bridergton",
-    "date": "05/08/2022",
+    "date": "2022-08-05",
     "src": "/assets/mockdata/continue-1.jpg",
     "descrition": "Bridergton qweqw841",
     "categorias": [
@@ -14,7 +14,7 @@
     "id": "2",
     "tipo": "series",
     "title": "Lupin",
-    "date": "12/09/2022",
+    "date": "2022-09-12",
     "src": "/assets/mockdata/continue-2.jpg",
     "descrition": "Lupin a18wd qqw",
     "categorias": [
@@ -26,7 +26,7 @@
     "id": "3",
     "tipo": "series",
     "title": "Money Heist",
-    "date": "25/08/2022",
+    "date": "2022-08-15",
     "src": "/assets/mockdata/continue-3.jpg",
     "descrition": "Money Heist qweq547",
     "categorias": [

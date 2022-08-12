@@ -11,9 +11,13 @@ import { IFilme } from '../model/IFilme.model';
 export class Tab2Page {
 
   filmes: IFilme[] = novidades;
-  dateAtual = new Date;
 
   constructor() {
+    this.verificaData();
   }
 
+  verificaData() {
+    this.filmes = this.filmes.filter(filme =>
+      new Date(filme.date) > new Date);
+  }
 }
