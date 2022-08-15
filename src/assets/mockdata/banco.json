@@ -1,53 +1,54 @@
 [
   {
     "id": "1",
-    "tipo": "series",
-    "title": "Bridergton",
-    "classification":"16",
-    "date": "2022-08-05",
-    "duration":"80",
-    "src": "/assets/mockdata/continue-1.jpg",
-    "descrition": "Bridergton qweqw841",
+    "tipo": "filme",
+    "title": "Blade",
+    "classification": "16",
+    "date": "2023-11-03",
+    "duration": "80",
+    "src": "/assets/mockdata/blade.jpg",
+    "descrition": "Em seu retorno ao cinema, Wesley Snipes volta a incorporar o híbrido de humano e vampiro que combate a ameaça das criaturas da noite.",
     "categorias": [
-      "drama"
+      "Ação",
+      "Terror"
     ]
   },
   {
     "id": "2",
-    "tipo": "series",
-    "title": "Lupin",
-    "classification":"16",
-    "date": "2022-09-12",
-    "duration":"80",
-    "src": "/assets/mockdata/continue-2.jpg",
-    "descrition": "Lupin a18wd qqw",
+    "tipo": "filme",
+    "title": "Scream 6",
+    "classification": "16",
+    "date": "2023-03-31",
+    "duration": "92",
+    "src": "/assets/mockdata/scream.jpg",
+    "descrition": "Scream 6 é um futuro filme americano, do subgênero slasher, dirigido por Matt Bettinelli-Olpin e Tyler Gillett, com roteiro de Guy Busick e James Vanderbilt. Trata-se da sexta parte da série cinematográfica Scream e é uma sequência direta do filme de 2022.",
     "categorias": [
-      "suspense",
-      "terror"
+      "Suspense",
+      "Terror"
     ]
   },
   {
     "id": "3",
-    "tipo": "series",
-    "title": "Money Heist",
-    "classification":"16",
-    "date": "2022-08-15",
-    "duration":"80",
-    "src": "/assets/mockdata/continue-3.jpg",
-    "descrition": "Money Heist qweq547",
+    "tipo": "filme",
+    "title": "Aquaman and the Lost Kingdom",
+    "classification": "14",
+    "date": "2023-03-17",
+    "duration": "88",
+    "src": "/assets/mockdata/aquaman.jpg",
+    "descrition": "Aquaman and the Lost Kingdom é um próximo filme de super-herói americano baseado no personagem Aquaman da DC Comics. Produzido pela DC Films, The Safran Company e Atomic Monster Productions, e distribuído pela Warner Bros.",
     "categorias": [
-      "terror"
+      "Ação"
     ]
   },
   {
     "id": "4",
     "tipo": "filme",
     "title": "Thor: Amor e Trovão",
-    "classification":"14",
+    "classification": "14",
     "date": "2022-07-07",
-    "duration":"125",
+    "duration": "125",
     "src": "/assets/mockdata/thor.jpg",
-    "descrition": "Money Heist qweq5O filme apresenta Thor em uma jornada diferente de tudo que ele já enfrentou – uma busca pela paz interior. Mas sua aposentadoria é interrompida por um assassino galático conhecido como Gorr, o Carniceiro dos Deuses, que busca a extinção dos deuses. Para combater a ameaça, Thor pede a ajuda do Rei Valquíria, Korg e da ex-namorada Jane Foster, que – para surpresa de Thor – inexplicavelmente carrega seu martelo mágico, Mjolnir, como a Poderosa Thor. Juntos, eles embarcam em uma alucinante aventura para descobrir o mistério da vingança do Carniceiro dos Deuses e detê-lo antes que seja tarde demais.47",
+    "descrition": "O filme apresenta Thor em uma jornada diferente de tudo que ele já enfrentou – uma busca pela paz interior. Mas sua aposentadoria é interrompida por um assassino galático conhecido como Gorr, o Carniceiro dos Deuses, que busca a extinção dos deuses. Para combater a ameaça, Thor pede a ajuda do Rei Valquíria, Korg e da ex-namorada Jane Foster, que – para surpresa de Thor – inexplicavelmente carrega seu martelo mágico, Mjolnir, como a Poderosa Thor. Juntos, eles embarcam em uma alucinante aventura para descobrir o mistério da vingança do Carniceiro dos Deuses e detê-lo antes que seja tarde demais.47",
     "categorias": [
       "Aventura"
     ]
@@ -56,9 +57,9 @@
     "id": "5",
     "tipo": "filme",
     "title": "Minions 2: A Origem de Gru",
-    "classification":"10",
+    "classification": "10",
     "date": "2022-07-30",
-    "duration":"90",
+    "duration": "90",
     "src": "/assets/mockdata/minions.jpg",
     "descrition": "A continuação das aventuras dos Minions, sempre em busca de um líder tirânico. Dessa vez, eles ajudam um Gru ainda criança, descobrindo como ser vilão.",
     "categorias": [
@@ -69,9 +70,9 @@
     "id": "6",
     "tipo": "filme",
     "title": "Trem-Bala",
-    "classification":"16",
+    "classification": "16",
     "date": "2022-08-04",
-    "duration":"126",
+    "duration": "126",
     "src": "/assets/mockdata/trem.jpg",
     "descrition": "Um dos trens-bala Shinkansen, no Japão, é ameaçado com uma bomba que explodirá automaticamente se o trem diminuir a velocidade abaixo de 80 quilômetros por hora, a menos que um resgate seja pago. A polícia corre contra o tempo para encontrar os bombardeiros e aprender como desarmar a bomba.",
     "categorias": [
@@ -82,9 +83,9 @@
     "id": "6",
     "tipo": "filme",
     "title": "O Telefone Preto",
-    "classification":"16",
+    "classification": "16",
     "date": "2022-07-21",
-    "duration":"102",
+    "duration": "102",
     "src": "/assets/mockdata/telefone.jpg",
     "descrition": "Finney Shaw, um menino tímido, mas inteligente, de 13 anos, é sequestrado por um assassino sádico e preso em um porão à prova de som, onde gritar é de pouca utilidade. Quando um telefone desconectado na parede começa a tocar, Finney descobre que pode ouvir as vozes das vítimas anteriores do assassino. E eles estão determinados a garantir que o que aconteceu com eles não aconteça com Finney.",
     "categorias": [
@@ -95,9 +96,9 @@
     "id": "7",
     "tipo": "filme",
     "title": "Projeto X: Uma Festa Fora de Controle",
-    "classification":"18",
+    "classification": "18",
     "date": "2012-03-16",
-    "duration":"88",
+    "duration": "88",
     "src": "/assets/mockdata/projeto.jpg",
     "descrition": "Com os pais fora de casa durante o final de semana, um adolescente e dois amigos resolvem fazer uma festa épica – que vai mudar suas vidas para sempre.",
     "categorias": [
@@ -108,9 +109,9 @@
     "id": "8",
     "tipo": "filme",
     "title": "Matrix Resurrections",
-    "classification":"14",
+    "classification": "14",
     "date": "2021-12-22",
-    "duration":"148",
+    "duration": "148",
     "src": "/assets/mockdata/matrix.jpg",
     "descrition": "Em um mundo de duas realidades - a vida cotidiana e o que está por trás dela - Thomas Anderson terá que escolher seguir o coelho branco mais uma vez. A escolha, embora seja uma ilusão, ainda é a única maneira de entrar ou sair da Matrix, que é mais forte, mais segura e mais perigosa do que nunca.",
     "categorias": [
@@ -121,9 +122,9 @@
     "id": "9",
     "tipo": "filme",
     "title": "Meu Primeiro Amor",
-    "classification":"Livre",
+    "classification": "Livre",
     "date": "1992-01-17",
-    "duration":"102",
+    "duration": "102",
     "src": "/assets/mockdata/primeiro.jpg",
     "descrition": "Vada, uma garota de apenas 11 anos, durante um verão, precisa lidar com o romance do pai viúvo, a atração pelo professor e a amizade com um garotinho alérgico.",
     "categorias": [
@@ -134,9 +135,9 @@
     "id": "10",
     "tipo": "filme",
     "title": "Grande Tubarão Branco",
-    "classification":"14",
+    "classification": "14",
     "date": "2021-07-16",
-    "duration":"91",
+    "duration": "91",
     "src": "/assets/mockdata/tubarao.jpg",
     "descrition": "Uma viagem a uma ilha paradisíaca se torna um pesadelo quando um grupo acaba preso em um bote em mar aberto. Enquanto lutam para chegar à praia, enfrentarão um incansável tubarão-branco logo abaixo da superfície. Dos produtores de ‘Medo Profundo’.",
     "categorias": [
@@ -147,9 +148,9 @@
     "id": "11",
     "tipo": "filme",
     "title": "Gravidade",
-    "classification":"12",
+    "classification": "12",
     "date": "2013-08-04",
-    "duration":"91",
+    "duration": "91",
     "src": "/assets/mockdata/gravidade.jpg",
     "descrition": "Dra. Ryan Stone e o astronauta Matt Kowalsky trabalham juntos para sobreviver depois que um acidente os deixa completamente à deriva no espaço, sem ligação com a Terra e sem esperança de resgate.",
     "categorias": [

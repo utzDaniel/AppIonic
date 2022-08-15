@@ -17,4 +17,4 @@ import { DadosPage } from './dados.page';
   ],
   declarations: [DadosPage]
 })
-export class DadosPageModule {}
+export class DadosPageModule { }

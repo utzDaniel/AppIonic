@@ -1,10 +1,10 @@
 ion-toolbar {
   --opacity: .95;
   --padding: 0px;
+  --min-height: 12vh;
 }
 
 ion-title {
-  height: 80px;
   padding: 0px 20px;
   font-size: 20px;
   text-align: center;
@@ -17,7 +17,7 @@ ion-searchbar {
 }
 
 ion-list {
-  margin: 7px 0px;
+  margin: 0px;
 }
 
 ion-item {
@@ -38,9 +38,6 @@ ion-thumbnail {
 }
 
 ion-label {
-  margin: 0px 10px 0px 10px;
-}
-
-#shadow-root div .item-native {
-  display: contents;
+  white-space: unset !important;
+  margin: 0px 0px 0px 5px;
 }

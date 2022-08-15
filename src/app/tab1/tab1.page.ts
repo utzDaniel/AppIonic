@@ -3,7 +3,9 @@ import { ModalController } from '@ionic/angular';
 import homeData from '../../assets/mockdata/home.json';
 import { ModalPage } from '../modal/modal.page';
 import { modalEnterAnimation, modalLeaveAnimation } from '../modal-animation';
-/*import { DrawerService } from '../services/drawer.service';*/
+import { DrawerService } from '../services/drawer.service';
+import banco from '../../assets/mockdata/banco.json';
+import { IFilme } from '../model/IFilme.model';
 
 @Component({
   selector: 'app-tab1',
@@ -11,6 +13,8 @@ import { modalEnterAnimation, modalLeaveAnimation } from '../modal-animation';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
+
+  filmes: IFilme[] = banco;
 
   sections = homeData.sections;
   spotlight = homeData.spotlight;
@@ -21,7 +25,8 @@ export class Tab1Page {
     freeMode: true
   };
 
-  constructor(private modalCtrl: ModalController, /*private drawerService: DrawerService*/) {
+  constructor(private modalCtrl: ModalController, private drawerService: DrawerService) {
+    this.verificaData();
   }
 
   async openCategories() {
@@ -35,8 +40,13 @@ export class Tab1Page {
     await modal.present();
   }
 
-  /*openInfo(series) {
+  openInfo(series) {
     this.drawerService.openDrawer(series.title);
-  }*/
+  }
+
+  verificaData() {
+    this.filmes = this.filmes.filter(filme =>
+      new Date(filme.date) > new Date);
+  }
 
 }

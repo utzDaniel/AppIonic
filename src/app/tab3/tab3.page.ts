@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import pesquisa from '../../assets/mockdata/pesquisa.json';
+import banco from '../../assets/mockdata/banco.json';
 import { IFilme } from '../model/IFilme.model';
 import { DrawerService } from '../services/drawer.service';
 
@@ -10,10 +10,11 @@ import { DrawerService } from '../services/drawer.service';
 })
 export class Tab3Page {
 
-  filmes: IFilme[] = pesquisa;
+  filmes: IFilme[];
 
 
   constructor(private drawerService: DrawerService) {
+    this.verificaData();
   }
 
   buscar(evento: any) {
@@ -22,13 +23,18 @@ export class Tab3Page {
       this.filmes = this.filmes.filter(filme =>
         filme.title.toLowerCase().includes(busca.toLowerCase()));
     } else {
-      this.filmes = pesquisa;
+      this.verificaData();
     }
 
   }
 
   openInfo(filme: IFilme) {
     this.drawerService.openDrawer(filme);
+  }
+
+  verificaData() {
+    this.filmes = banco.filter(filme =>
+      new Date(filme.date) <= new Date);
   }
 
 }

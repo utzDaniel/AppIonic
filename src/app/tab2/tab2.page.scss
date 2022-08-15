@@ -1,10 +1,10 @@
 ion-toolbar {
   --opacity: .95;
   --padding: 0px;
+  --min-height: 12vh;
 }
 
 ion-title {
-  height: 80px;
   padding: 0px 20px;
   font-size: 20px;
   text-align: center;
@@ -20,9 +20,16 @@ ion-card {
   padding: 0px;
 }
 
+
 ion-card-header {
-  padding: 10px 0px;
+  padding: 0px 0px;
+
+  img {
+    height: 210px;
+    width: 100%;
+  }
 }
+
 
 ion-card-title {
   text-align: end;
@@ -54,6 +61,5 @@ ion-card-content {
 
 .categorias {
   font-size: 0.85rem;
-
   font-weight: 100;
 }

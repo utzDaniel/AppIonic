@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import novidades from '../../assets/mockdata/novidades.json';
+import banco from '../../assets/mockdata/banco.json';
 import { IFilme } from '../model/IFilme.model';
 
 
@@ -10,7 +10,7 @@ import { IFilme } from '../model/IFilme.model';
 })
 export class Tab2Page {
 
-  filmes: IFilme[] = novidades;
+  filmes: IFilme[] = banco;
 
   constructor() {
     this.verificaData();
@@ -18,6 +18,10 @@ export class Tab2Page {
 
   verificaData() {
     this.filmes = this.filmes.filter(filme =>
-      new Date(filme.date) > new Date);
+      new Date(filme.date) > new Date)
+      .sort(function (f1, f2) {
+        return new Date(f1.date).getTime() - new Date(f2.date).getTime()
+      }
+      );
   }
 }

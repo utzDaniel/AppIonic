@@ -23,6 +23,7 @@ export class DrawerComponent {
   constructor(public toastController: ToastController, public dadosService: DadosService, public route: Router) { }
 
   exibir(filme: IFilme) {
+    this.closeDrawer();
     this.dadosService.saveDados('filme', filme);
     this.route.navigateByUrl('/dados');
   }
@@ -43,13 +44,6 @@ export class DrawerComponent {
     this.openState.emit(false);
   }
 
-  playClick() {
-    const drawer = this.drawer.nativeElement;
-    drawer.style.transition = '.2s ease-out';
-    drawer.style.transform = '';
-    this.openState.emit(false);
-  }
-
   downloadClick() {
     if (!this.download) {
       this.msgToast("Baixando " + this.filme.title, "success");
@@ -64,13 +58,6 @@ export class DrawerComponent {
       this.msgToast("Removendo da lista.", "danger");
     }
     this.myList = !this.myList;
-  }
-
-  informationClick() {
-    const drawer = this.drawer.nativeElement;
-    drawer.style.transition = '.2s ease-out';
-    drawer.style.transform = '';
-    this.openState.emit(false);
   }
 
   async msgToast(msg, cor) {

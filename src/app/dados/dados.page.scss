@@ -1,18 +1,17 @@
-ion-card {
-  padding: 0px;
+ion-toolbar {
+  --opacity: .95;
+  --padding: 0px;
+  --min-height: 12vh;
 }
 
-ion-card-header {
-  padding: 10px 0px;
-}
-
-ion-card-title {
-  text-align: end;
-  font-weight: 700;
-  padding-bottom: 10px;
+ion-back-button span {
+  padding-left: 10px;
 }
 
 ion-title {
+  padding: 0px 20px;
+  font-size: 20px;
+  text-align: center;
   color: rgba(7, 167, 114, 0.867);
   font-weight: 700;
 
@@ -21,8 +20,91 @@ ion-title {
   }
 }
 
+ion-card {
+  padding: 0px;
+  margin: 0px;
+}
+
+ion-card-header {
+  padding: 0px;
+
+  img {
+    height: 210px;
+    width: 100%;
+  }
+}
+
 ion-card-content {
-  padding: 5px 5px;
+  padding: 0px 15px;
+}
+
+ion-list:nth-child(2) {
+  padding: 0px;
+  display: flex;
+
+  ion-item ion-label {
+    margin: 0px;
+    font-size: 0.85rem;
+  }
+
+  text-align: center;
+}
+
+.classificacao {
+  min-width: 20px;
+  background-color: red;
+}
+
+.classificacao-livre {
+  min-width: 36px;
+  background-color: green;
+}
+
+ion-list:nth-child(3) {
+  padding: 0px;
+
+  ion-item {
+    padding-top: 8px;
+  }
+
+  ion-icon {
+    padding-right: 5px;
+    text-align: center;
+  }
+
+  ion-item:nth-child(2) {
+    --background: #2B2B2C !important;
+    --border-color: #2B2B2C;
+
+    ion-icon {
+      color: #fff;
+    }
+  }
+
+  ion-item:nth-child(2):hover {
+    --background: #1a1a1a !important;
+    cursor: pointer;
+    --border-color: #1a1a1a;
+  }
+
+  ion-item:nth-child(1) {
+    --background: #fff !important;
+    --border-color: #fff;
+
+    ion-label {
+      color: #000;
+    }
+
+    ion-icon {
+      color: #000;
+    }
+  }
+
+  ion-item:nth-child(1):hover {
+    --background: rgb(244, 235, 235) !important;
+    cursor: pointer;
+    --border-color: rgb(244, 235, 235);
+  }
 }
 
 .title {
