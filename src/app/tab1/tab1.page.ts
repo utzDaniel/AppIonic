@@ -6,6 +6,8 @@ import { modalEnterAnimation, modalLeaveAnimation } from '../modal-animation';
 import { DrawerService } from '../services/drawer.service';
 import banco from '../../assets/mockdata/banco.json';
 import { IFilme } from '../model/IFilme.model';
+import cate from '../../assets/mockdata/categories.json';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab1',
@@ -15,6 +17,7 @@ import { IFilme } from '../model/IFilme.model';
 export class Tab1Page {
 
   filmes: IFilme[] = banco;
+  categorias: string[] = cate;
 
   sections = homeData.sections;
   spotlight = homeData.spotlight;
@@ -25,9 +28,13 @@ export class Tab1Page {
     freeMode: true
   };
 
-  constructor(private modalCtrl: ModalController, private drawerService: DrawerService) {
+  handlerMessage = '';
+  roleMessage = '';
+
+  constructor(private alertController: AlertController, private modalCtrl: ModalController, private drawerService: DrawerService) {
     this.verificaData();
   }
+
 
   async openCategories() {
     const modal = await this.modalCtrl.create({
@@ -40,8 +47,8 @@ export class Tab1Page {
     await modal.present();
   }
 
-  openInfo(series) {
-    this.drawerService.openDrawer(series.title);
+  openInfo(filme: IFilme) {
+    this.drawerService.openDrawer(filme);
   }
 
   verificaData() {
@@ -49,4 +56,71 @@ export class Tab1Page {
       new Date(filme.date) > new Date);
   }
 
+  async presentAlert() {
+    const alert = await this.alertController.create({
+      header: 'Inicio',
+      cssClass: 'custom-alert',
+      buttons: [
+        {
+          text: 'Ação',
+          role: 'confirm',
+          cssClass: 'cat',
+          handler: () => {
+            this.handlerMessage = 'Ação';
+          },
+        }, {
+          text: 'Terror',
+          role: 'confirm',
+          cssClass: 'cat',
+          handler: () => {
+            this.handlerMessage = 'Terror';
+          },
+        }, {
+          text: 'Suspense',
+          role: 'confirm',
+          cssClass: 'cat',
+          handler: () => {
+            this.handlerMessage = 'Suspense';
+          },
+        }, {
+          text: 'Aventura',
+          role: 'confirm',
+          cssClass: 'cat',
+          handler: () => {
+            this.handlerMessage = 'Aventura';
+          },
+        }, {
+          text: 'Comédia',
+          role: 'confirm',
+          cssClass: 'cat',
+          handler: () => {
+            this.handlerMessage = 'Comédia';
+          },
+        }, {
+          text: 'Ficção científica',
+          role: 'confirm',
+          cssClass: 'cat',
+          handler: () => {
+            this.handlerMessage = 'Ficção científica';
+          },
+        }, {
+          text: 'Drama',
+          role: 'confirm',
+          cssClass: 'cat',
+          handler: () => {
+            this.handlerMessage = 'Drama';
+          },
+        }, {
+          text: 'Voltar',
+          role: 'cancel',
+          cssClass: 'cancel',
+          handler: () => {
+            this.handlerMessage = 'Voltar';
+          },
+        }
+      ],
+    });
+
+    await alert.present();
+  }
 }
