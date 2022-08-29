@@ -1,16 +1,21 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-title>
-      Tab 4
+      Downloads
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 4</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-list>
+    <ion-item *ngFor="let filme of filmes" (click)="openInfo(filme)" lines="none">
+      <ion-thumbnail>
+        <img [src]="filme.src" />
+      </ion-thumbnail>
+      <ion-label>
+        {{filme.title}}
+      </ion-label>
+    </ion-item>
+  </ion-list>
 
 </ion-content>

@@ -1,0 +1,43 @@
+ion-toolbar {
+  --opacity: .95;
+  --padding: 0px;
+  --min-height: 12vh;
+}
+
+ion-title {
+  padding: 0px 20px;
+  font-size: 20px;
+  text-align: center;
+  color: rgba(7, 167, 114, 0.867);
+  font-weight: 700;
+}
+
+ion-searchbar {
+  padding: 0px;
+}
+
+ion-list {
+  margin: 0px;
+}
+
+ion-item {
+  padding: 4px 0px;
+  margin: 0px;
+  --background: #333533;
+  --border-color: #fff;
+}
+
+ion-item:hover {
+  --background: #1a1b1a;
+  cursor: pointer;
+
+}
+
+ion-thumbnail {
+  margin: 0px;
+}
+
+ion-label {
+  white-space: unset !important;
+  margin: 0px 0px 0px 5px;
+}

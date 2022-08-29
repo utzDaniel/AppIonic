@@ -6,12 +6,14 @@
     "classification": "16",
     "date": "2023-11-03",
     "duration": "80",
-    "src": "/assets/mockdata/blade.jpg",
+    "src": "/assets/mockdata/img/blade.jpg",
     "descrition": "Em seu retorno ao cinema, Wesley Snipes volta a incorporar o híbrido de humano e vampiro que combate a ameaça das criaturas da noite.",
     "categorias": [
       "Ação",
       "Terror"
-    ]
+    ],
+    "mylista": false,
+    "downloand": false
   },
   {
     "id": "2",
@@ -20,12 +22,14 @@
     "classification": "16",
     "date": "2023-03-31",
     "duration": "92",
-    "src": "/assets/mockdata/scream.jpg",
+    "src": "/assets/mockdata/img/scream.jpg",
     "descrition": "Scream 6 é um futuro filme americano, do subgênero slasher, dirigido por Matt Bettinelli-Olpin e Tyler Gillett, com roteiro de Guy Busick e James Vanderbilt. Trata-se da sexta parte da série cinematográfica Scream e é uma sequência direta do filme de 2022.",
     "categorias": [
       "Suspense",
       "Terror"
-    ]
+    ],
+    "mylista": false,
+    "downloand": false
   },
   {
     "id": "3",
@@ -34,11 +38,13 @@
     "classification": "14",
     "date": "2023-03-17",
     "duration": "88",
-    "src": "/assets/mockdata/aquaman.jpg",
+    "src": "/assets/mockdata/img/aquaman.jpg",
     "descrition": "Aquaman and the Lost Kingdom é um próximo filme de super-herói americano baseado no personagem Aquaman da DC Comics. Produzido pela DC Films, The Safran Company e Atomic Monster Productions, e distribuído pela Warner Bros.",
     "categorias": [
       "Ação"
-    ]
+    ],
+    "mylista": false,
+    "downloand": false
   },
   {
     "id": "4",
@@ -47,11 +53,13 @@
     "classification": "14",
     "date": "2022-07-07",
     "duration": "125",
-    "src": "/assets/mockdata/thor.jpg",
+    "src": "/assets/mockdata/img/thor.jpg",
     "descrition": "O filme apresenta Thor em uma jornada diferente de tudo que ele já enfrentou – uma busca pela paz interior. Mas sua aposentadoria é interrompida por um assassino galático conhecido como Gorr, o Carniceiro dos Deuses, que busca a extinção dos deuses. Para combater a ameaça, Thor pede a ajuda do Rei Valquíria, Korg e da ex-namorada Jane Foster, que – para surpresa de Thor – inexplicavelmente carrega seu martelo mágico, Mjolnir, como a Poderosa Thor. Juntos, eles embarcam em uma alucinante aventura para descobrir o mistério da vingança do Carniceiro dos Deuses e detê-lo antes que seja tarde demais.47",
     "categorias": [
       "Aventura"
-    ]
+    ],
+    "mylista": false,
+    "downloand": false
   },
   {
     "id": "5",
@@ -60,11 +68,13 @@
     "classification": "10",
     "date": "2022-07-30",
     "duration": "90",
-    "src": "/assets/mockdata/minions.jpg",
+    "src": "/assets/mockdata/img/minions.jpg",
     "descrition": "A continuação das aventuras dos Minions, sempre em busca de um líder tirânico. Dessa vez, eles ajudam um Gru ainda criança, descobrindo como ser vilão.",
     "categorias": [
       "Aventura"
-    ]
+    ],
+    "mylista": false,
+    "downloand": false
   },
   {
     "id": "6",
@@ -73,11 +83,13 @@
     "classification": "16",
     "date": "2022-08-04",
     "duration": "126",
-    "src": "/assets/mockdata/trem.jpg",
+    "src": "/assets/mockdata/img/trem.jpg",
     "descrition": "Um dos trens-bala Shinkansen, no Japão, é ameaçado com uma bomba que explodirá automaticamente se o trem diminuir a velocidade abaixo de 80 quilômetros por hora, a menos que um resgate seja pago. A polícia corre contra o tempo para encontrar os bombardeiros e aprender como desarmar a bomba.",
     "categorias": [
       "Ação"
-    ]
+    ],
+    "mylista": false,
+    "downloand": false
   },
   {
     "id": "6",
@@ -86,11 +98,13 @@
     "classification": "16",
     "date": "2022-07-21",
     "duration": "102",
-    "src": "/assets/mockdata/telefone.jpg",
+    "src": "/assets/mockdata/img/telefone.jpg",
     "descrition": "Finney Shaw, um menino tímido, mas inteligente, de 13 anos, é sequestrado por um assassino sádico e preso em um porão à prova de som, onde gritar é de pouca utilidade. Quando um telefone desconectado na parede começa a tocar, Finney descobre que pode ouvir as vozes das vítimas anteriores do assassino. E eles estão determinados a garantir que o que aconteceu com eles não aconteça com Finney.",
     "categorias": [
       "Terror"
-    ]
+    ],
+    "mylista": false,
+    "downloand": false
   },
   {
     "id": "7",
@@ -99,11 +113,13 @@
     "classification": "18",
     "date": "2012-03-16",
     "duration": "88",
-    "src": "/assets/mockdata/projeto.jpg",
+    "src": "/assets/mockdata/img/projeto.jpg",
     "descrition": "Com os pais fora de casa durante o final de semana, um adolescente e dois amigos resolvem fazer uma festa épica – que vai mudar suas vidas para sempre.",
     "categorias": [
       "Comédia"
-    ]
+    ],
+    "mylista": false,
+    "downloand": false
   },
   {
     "id": "8",
@@ -112,11 +128,13 @@
     "classification": "14",
     "date": "2021-12-22",
     "duration": "148",
-    "src": "/assets/mockdata/matrix.jpg",
+    "src": "/assets/mockdata/img/matrix.jpg",
     "descrition": "Em um mundo de duas realidades - a vida cotidiana e o que está por trás dela - Thomas Anderson terá que escolher seguir o coelho branco mais uma vez. A escolha, embora seja uma ilusão, ainda é a única maneira de entrar ou sair da Matrix, que é mais forte, mais segura e mais perigosa do que nunca.",
     "categorias": [
       "Ficção científica"
-    ]
+    ],
+    "mylista": false,
+    "downloand": false
   },
   {
     "id": "9",
@@ -125,11 +143,13 @@
     "classification": "Livre",
     "date": "1992-01-17",
     "duration": "102",
-    "src": "/assets/mockdata/primeiro.jpg",
+    "src": "/assets/mockdata/img/primeiro.jpg",
     "descrition": "Vada, uma garota de apenas 11 anos, durante um verão, precisa lidar com o romance do pai viúvo, a atração pelo professor e a amizade com um garotinho alérgico.",
     "categorias": [
       "Romance"
-    ]
+    ],
+    "mylista": false,
+    "downloand": false
   },
   {
     "id": "10",
@@ -138,11 +158,13 @@
     "classification": "14",
     "date": "2021-07-16",
     "duration": "91",
-    "src": "/assets/mockdata/tubarao.jpg",
+    "src": "/assets/mockdata/img/tubarao.jpg",
     "descrition": "Uma viagem a uma ilha paradisíaca se torna um pesadelo quando um grupo acaba preso em um bote em mar aberto. Enquanto lutam para chegar à praia, enfrentarão um incansável tubarão-branco logo abaixo da superfície. Dos produtores de ‘Medo Profundo’.",
     "categorias": [
       "Suspense"
-    ]
+    ],
+    "mylista": false,
+    "downloand": false
   },
   {
     "id": "11",
@@ -151,10 +173,12 @@
     "classification": "12",
     "date": "2013-08-04",
     "duration": "91",
-    "src": "/assets/mockdata/gravidade.jpg",
+    "src": "/assets/mockdata/img/gravidade.jpg",
     "descrition": "Dra. Ryan Stone e o astronauta Matt Kowalsky trabalham juntos para sobreviver depois que um acidente os deixa completamente à deriva no espaço, sem ligação com a Terra e sem esperança de resgate.",
     "categorias": [
       "Drama"
-    ]
+    ],
+    "mylista": false,
+    "downloand": false
   }
 ]

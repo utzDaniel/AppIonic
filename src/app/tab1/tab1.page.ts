@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
-import { ModalController } from '@ionic/angular';
-import homeData from '../../assets/mockdata/home.json';
-import { ModalPage } from '../modal/modal.page';
-import { modalEnterAnimation, modalLeaveAnimation } from '../modal-animation';
-import { DrawerService } from '../services/drawer.service';
-import banco from '../../assets/mockdata/banco.json';
-import { IFilme } from '../model/IFilme.model';
-import cate from '../../assets/mockdata/categories.json';
+import home from '../../assets/mockdata/home.json';
+
 import { AlertController } from '@ionic/angular';
 
 @Component({
@@ -16,11 +10,9 @@ import { AlertController } from '@ionic/angular';
 })
 export class Tab1Page {
 
-  filmes: IFilme[] = banco;
-  categorias: string[] = cate;
 
-  sections = homeData.sections;
-  spotlight = homeData.spotlight;
+  sections = home.sections;
+  destaque = home.destaque;
 
   opts = {
     slidesPerView: 2.4,
@@ -31,29 +23,8 @@ export class Tab1Page {
   handlerMessage = '';
   roleMessage = '';
 
-  constructor(private alertController: AlertController, private modalCtrl: ModalController, private drawerService: DrawerService) {
-    this.verificaData();
-  }
+  constructor(private alertController: AlertController) {
 
-
-  async openCategories() {
-    const modal = await this.modalCtrl.create({
-      component: ModalPage,
-      cssClass: 'transparent-modal',
-      enterAnimation: modalEnterAnimation,
-      leaveAnimation: modalLeaveAnimation
-    });
-
-    await modal.present();
-  }
-
-  openInfo(filme: IFilme) {
-    this.drawerService.openDrawer(filme);
-  }
-
-  verificaData() {
-    this.filmes = this.filmes.filter(filme =>
-      new Date(filme.date) > new Date);
   }
 
   async presentAlert() {
