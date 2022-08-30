@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import banco from '../../assets/mockdata/banco.json';
 import { IFilme } from '../model/IFilme.model';
 
@@ -7,13 +7,17 @@ import { IFilme } from '../model/IFilme.model';
   templateUrl: './tab4.page.html',
   styleUrls: ['./tab4.page.scss'],
 })
-export class Tab4Page implements OnInit {
+export class Tab4Page {
 
-  filmes: IFilme[];
+  filmes: IFilme[] = banco;
 
-  constructor() { }
+  constructor() {
+    this.verificaDownload();
+  }
 
-  ngOnInit() {
+  verificaDownload() {
+    this.filmes = this.filmes.filter(filme =>
+      filme.downloand === true);
   }
 
 }

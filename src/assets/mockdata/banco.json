@@ -104,7 +104,7 @@
       "Terror"
     ],
     "mylista": false,
-    "downloand": false
+    "downloand": true
   },
   {
     "id": "7",
@@ -134,7 +134,7 @@
       "Ficção científica"
     ],
     "mylista": false,
-    "downloand": false
+    "downloand": true
   },
   {
     "id": "9",
@@ -164,7 +164,7 @@
       "Suspense"
     ],
     "mylista": false,
-    "downloand": false
+    "downloand": true
   },
   {
     "id": "11",
@@ -179,6 +179,6 @@
       "Drama"
     ],
     "mylista": false,
-    "downloand": false
+    "downloand": true
   }
 ]
